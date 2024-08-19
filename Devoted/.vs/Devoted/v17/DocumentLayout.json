@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\view\\pages\\journal_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\view\\pages\\journal_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Devoted\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\MainWindow.xaml",
+              "RelativeToolTip": "Devoted\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-19T20:39:02.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "journal_page.xaml",
+              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml",
+              "RelativeDocumentMoniker": "Devoted\\View\\Pages\\journal_page.xaml",
+              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml",
+              "RelativeToolTip": "Devoted\\View\\Pages\\journal_page.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-19T20:26:03.484Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
