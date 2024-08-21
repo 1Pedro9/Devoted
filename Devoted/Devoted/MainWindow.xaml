@@ -10,6 +10,7 @@
         AllowsTransparency="True"
         WindowStyle="None"
         Background="Transparent"
+        ResizeMode="CanResize"
         >
     <Window.DataContext>
         <viewModel:MainViewModel/>

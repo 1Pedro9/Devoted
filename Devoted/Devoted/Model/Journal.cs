@@ -52,6 +52,21 @@ namespace Devoted.Model
         {
             return $"DELETE FROM Journal WHERE journal_id = {JournalId};";
         }
+
+        public string getYear()
+        {
+            return this.Date.Year.ToString();
+        }
+
+        public string getMonth()
+        {
+            return this.Date.Month.ToString();
+        }
+
+        public string getDay()
+        {
+            return this.Date.Day.ToString();
+        }
     }
 
 }

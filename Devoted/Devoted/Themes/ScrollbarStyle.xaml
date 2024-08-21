@@ -1,0 +1,50 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style x:Key="CustomScrollViewerStyle" TargetType="ScrollViewer">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ScrollViewer">
+                    <Grid>
+                        <!-- Scroll Content Presenter -->
+                        <ScrollContentPresenter VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>
+
+                        <!-- Vertical ScrollBar -->
+                        <ScrollBar x:Name="PART_VerticalScrollBar" 
+                                   Orientation="Vertical"
+                                   Background="LightGray"
+                                   Foreground="Gray"
+                                   Width="12"
+                                   VerticalAlignment="Stretch"
+                                   HorizontalAlignment="Right"/>
+
+                        <!-- Horizontal ScrollBar -->
+                        <ScrollBar x:Name="PART_HorizontalScrollBar" 
+                                   Orientation="Horizontal"
+                                   Background="LightGray"
+                                   Foreground="Gray"
+                                   Height="12"
+                                   VerticalAlignment="Bottom"
+                                   HorizontalAlignment="Stretch"/>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <!-- ScrollBar Style -->
+    <Style x:Key="CustomScrollBarStyle" TargetType="ScrollBar">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="ScrollBar">
+                    <Grid Background="{TemplateBinding Background}">
+                        <Track x:Name="PART_Track" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                            <Track.Thumb>
+                                <Thumb Background="{TemplateBinding Foreground}" />
+                            </Track.Thumb>
+                        </Track>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
