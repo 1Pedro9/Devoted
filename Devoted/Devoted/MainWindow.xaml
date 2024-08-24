@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Devoted"
         xmlns:viewModel="clr-namespace:Devoted.ViewModel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="1200"
+        Title="MainWindow" Height="750" Width="1200"
         AllowsTransparency="True"
         WindowStyle="None"
         Background="Transparent"
@@ -19,19 +19,69 @@
         Background="#eee"
         BorderBrush="White"
         BorderThickness="2"
-        Padding="10"
         >
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="70"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
 
+            <Border
+                Background="White"
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"
+                />
+            <Border 
+                Background="White"
+                VerticalAlignment="Stretch"
+                HorizontalAlignment="Stretch"
+                Grid.Column="1"
+                >
+                
+                <StackPanel
+                    
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Center"
+                    Orientation="Horizontal"
+                    Margin="0"
+                    >
+                    <Border
+                        Style="{StaticResource ControlBorder}"
+                        >
+                        <Button 
+                            Style="{StaticResource ControlButton}"
+                            Background="Transparent"
+                            Click="Minimise">
+                            <Image Source="Images/remove.png"/>
+                        </Button>
+                    </Border>
+                    <Border
+                        Style="{StaticResource ControlBorder}"
+                        >
+                        <Button Style="{StaticResource ControlButton}"
+                                Click="Maximise">
+                            <Image Source="Images/maximise.png"/>
+                        </Button>
+                    </Border>
+                    <Border
+                        Style="{StaticResource ControlBorder}"
+                        >
+                        <Button Style="{StaticResource ControlButton}"
+                                Click="Close">
+                            <Image Source="Images/octagon-xmark.png"/>
+                        </Button>
+                    </Border>
+                </StackPanel>
+            </Border>
+            
+            
             <Label
+                Grid.Row="1"
                 Content="Devoted"
                 FontSize="40"
                 HorizontalAlignment="left"
@@ -41,7 +91,9 @@
                 Margin="20 0 0 0"
                 />
             <StackPanel
-                Grid.Row="1">
+                Grid.Row="2"
+                Margin="5 0 0 0"
+                >
                 <Border Style="{StaticResource AppStyleBorder}">
                     <Button Style="{StaticResource AppStyleButton}">
                         <Image Source="Images/to-do.png"/>
@@ -64,7 +116,7 @@
                 </Border>
             </StackPanel>
             <StackPanel
-                Grid.Row="1"
+                Grid.Row="2"
                 Grid.Column="1"
                 >
                 <ContentControl Content="{Binding journal}"/>

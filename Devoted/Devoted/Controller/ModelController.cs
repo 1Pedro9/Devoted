@@ -60,10 +60,6 @@ namespace Devoted.Controller
                 foreach (var line in lines.Skip(1))
                 {
                     var values = line.Split(',');
-                    Console.WriteLine(line);
-
-                    // Assuming the CSV file has the following order of columns:
-                    // JournalId, Date, Details, Amount, DiverseDetails, JournalType, MemberId, PlanId, CategoryId
 
                     int journalId = int.Parse(values[0]);
                     DateTime date = DateTime.ParseExact(values[1], "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
@@ -81,7 +77,6 @@ namespace Devoted.Controller
             }
             catch (Exception ex)
             {
-                // Handle any exceptions (e.g., file not found, parsing errors)
                 Console.WriteLine($"An error occurred while reading the CSV file: {ex.Message}");
             }
 

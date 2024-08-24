@@ -20,3 +20,4 @@ C:\Users\basso\source\repos\Devoted\Devoted\Devoted\obj\Debug\View\Pages\journal
 C:\Users\basso\source\repos\Devoted\Devoted\Devoted\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\basso\source\repos\Devoted\Devoted\Devoted\obj\Debug\View\Pages\journal_page.baml
 C:\Users\basso\source\repos\Devoted\Devoted\Devoted\obj\Debug\Themes\ScrollbarStyle.baml
+C:\Users\basso\source\repos\Devoted\Devoted\Devoted\obj\Debug\Themes\WindowControlStyle.baml

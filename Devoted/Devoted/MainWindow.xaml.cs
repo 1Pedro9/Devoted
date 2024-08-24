@@ -24,5 +24,20 @@ namespace Devoted
         {
             InitializeComponent();
         }
+
+        private void Minimise(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Maximise(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Close(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -9,6 +9,7 @@
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Themes/AppStyle.xaml"/>
+                <ResourceDictionary Source="Themes/WindowControlStyle.xaml"/>
                 <ResourceDictionary Source="Themes/ScrollbarStyle.xaml"/>
             </ResourceDictionary.MergedDictionaries>
             <DataTemplate DataType="{x:Type viewModelPage:JournalVM}">

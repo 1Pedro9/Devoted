@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\basso\source\repos\Devoted\Devoted\Devoted\App.xaml
-41514245086
+5984048312
 110784606
 151485715878
 13-1310406943
-MainWindow.xaml;Themes\AppStyle.xaml;Themes\ScrollbarStyle.xaml;View\Pages\journal_page.xaml;
+MainWindow.xaml;Themes\AppStyle.xaml;Themes\ScrollbarStyle.xaml;Themes\WindowControlStyle.xaml;View\Pages\journal_page.xaml;
 
 False
 

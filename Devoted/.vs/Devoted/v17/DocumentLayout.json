@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\view\\pages\\journal_page.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\view\\pages\\journal_page.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\devoted\\view\\pages\\journal_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\view\\pages\\journal_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\themes\\scrollbarstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\themes\\scrollbarstyle.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\view\\pages\\journal_page.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
+      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\view\\pages\\journal_page.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,39 +26,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ScrollbarStyle.xaml",
-              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\Themes\\ScrollbarStyle.xaml",
-              "RelativeDocumentMoniker": "Devoted\\Themes\\ScrollbarStyle.xaml",
-              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\Themes\\ScrollbarStyle.xaml",
-              "RelativeToolTip": "Devoted\\Themes\\ScrollbarStyle.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-21T20:12:45.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "journal_page.xaml.cs",
               "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml.cs",
               "RelativeDocumentMoniker": "Devoted\\View\\Pages\\journal_page.xaml.cs",
               "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml.cs",
               "RelativeToolTip": "Devoted\\View\\Pages\\journal_page.xaml.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAgwE4AAAAoAAAA",
+              "ViewState": "AQIAACkBAAAAAAAAAAAiwDUBAAB1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-21T20:05:33.898Z",
+              "WhenOpened": "2024-08-24T10:03:52.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "journal_page.xaml",
               "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml",
               "RelativeDocumentMoniker": "Devoted\\View\\Pages\\journal_page.xaml",
               "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml",
               "RelativeToolTip": "Devoted\\View\\Pages\\journal_page.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-19T20:26:03.484Z",
+              "WhenOpened": "2024-08-24T09:44:39.746Z",
               "EditorCaption": ""
             }
           ]
