@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\devoted\\view\\pages\\journal_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\view\\pages\\journal_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\database\\stocks.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\database\\stocks.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\view\\pages\\journal_page.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|",
-      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\view\\pages\\journal_page.xaml.cs||{8B382828-6202-11D1-8870-0000F87579D2}|"
+      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\model\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\model\\stock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\controller\\modelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\controller\\modelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\view\\pages\\stock_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\view\\pages\\stock_page.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|c:\\users\\basso\\source\\repos\\devoted\\devoted\\devoted\\view\\pages\\stock_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8B80715D-1D8B-4331-BFD8-D743F546DF41}|Devoted\\Devoted.csproj|solutionrelative:devoted\\view\\pages\\stock_page.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +42,78 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "journal_page.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml.cs",
-              "RelativeDocumentMoniker": "Devoted\\View\\Pages\\journal_page.xaml.cs",
-              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml.cs",
-              "RelativeToolTip": "Devoted\\View\\Pages\\journal_page.xaml.cs",
-              "ViewState": "AQIAACkBAAAAAAAAAAAiwDUBAAB1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T10:03:52.041Z",
+              "DocumentIndex": 0,
+              "Title": "Stocks.csv",
+              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\Database\\Stocks.csv",
+              "RelativeDocumentMoniker": "Devoted\\Database\\Stocks.csv",
+              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\Database\\Stocks.csv",
+              "RelativeToolTip": "Devoted\\Database\\Stocks.csv",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
+              "WhenOpened": "2024-08-29T15:16:11.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "journal_page.xaml",
-              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml",
-              "RelativeDocumentMoniker": "Devoted\\View\\Pages\\journal_page.xaml",
-              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\journal_page.xaml",
-              "RelativeToolTip": "Devoted\\View\\Pages\\journal_page.xaml",
+              "DocumentIndex": 1,
+              "Title": "Stock.cs",
+              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\Model\\Stock.cs",
+              "RelativeDocumentMoniker": "Devoted\\Model\\Stock.cs",
+              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\Model\\Stock.cs",
+              "RelativeToolTip": "Devoted\\Model\\Stock.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAkwB4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T15:11:02.573Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModelController.cs",
+              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\Controller\\ModelController.cs",
+              "RelativeDocumentMoniker": "Devoted\\Controller\\ModelController.cs",
+              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\Controller\\ModelController.cs",
+              "RelativeToolTip": "Devoted\\Controller\\ModelController.cs",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAmwGoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T15:07:53.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "stock_page.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\stock_page.xaml.cs",
+              "RelativeDocumentMoniker": "Devoted\\View\\Pages\\stock_page.xaml.cs",
+              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\stock_page.xaml.cs",
+              "RelativeToolTip": "Devoted\\View\\Pages\\stock_page.xaml.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAtwCQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T10:23:04.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Devoted\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\MainWindow.xaml",
+              "RelativeToolTip": "Devoted\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-24T09:44:39.746Z",
+              "WhenOpened": "2024-08-29T10:16:36.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "stock_page.xaml",
+              "DocumentMoniker": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\stock_page.xaml",
+              "RelativeDocumentMoniker": "Devoted\\View\\Pages\\stock_page.xaml",
+              "ToolTip": "C:\\Users\\basso\\source\\repos\\Devoted\\Devoted\\Devoted\\View\\Pages\\stock_page.xaml",
+              "RelativeToolTip": "Devoted\\View\\Pages\\stock_page.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-08-29T09:36:04.799Z",
               "EditorCaption": ""
             }
           ]

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Devoted.Controller;
+using Devoted.Model;
+using Devoted.ViewModel.Pages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -13,42 +15,39 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Devoted.Controller;
-using Devoted.Model;
 
 namespace Devoted.View.Pages
 {
     /// <summary>
-    /// Interaction logic for journal_page.xaml
+    /// Interaction logic for stock_page.xaml
     /// </summary>
-    public partial class journal_page : UserControl
+    public partial class stock_page : UserControl
     {
-
         private Member member;
         private Plan plan;
         private ModelController controller;
         private List<int> row_no_touch = new List<int>();
-        private string JournalType = "CRJ";
-        public journal_page()
+        private string StockManager = "Easy Equities";
+        public stock_page()
         {
             InitializeComponent();
             controller = new ModelController();
-            
+
             help_setup_filter();
-            show_journal(JournalType, controller.journals());
+            show_stock(StockManager, controller.stocks());
             UpdateScrollViewerHeight();
-            update_row_selected(1);
+            // update_row_selected(1);
         }
 
         private void help_setup_filter()
         {
             int[] month_day = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-            for(int i = 0; i < 12; i++)
+            for (int i = 0; i < 12; i++)
             {
                 ComboBoxItem item = new ComboBoxItem();
-                item.Content = (i+1).ToString();
+                item.Content = (i + 1).ToString();
                 FilterMonth.Items.Add(item);
-                
+
             }
             for (int j = 0; j < month_day[0]; j++)
             {
@@ -59,54 +58,123 @@ namespace Devoted.View.Pages
             for (int i = 0; i < 24; i++)
             {
                 ComboBoxItem item = new ComboBoxItem();
-                item.Content = (2024-(i)).ToString();
+                item.Content = (2024 - (i)).ToString();
                 FilterYear.Items.Add(item);
 
             }
 
         }
 
-        private void show_journal(String a, List<Journal> list)
+        private void UpdateScrollViewerHeight()
         {
-            List<Journal> journals = list;
-            int count = 0;
-            if(journals.Count > 0)
+            double headerHeight = (Table_container.RowDefinitions[0].ActualHeight);
+            double availableHeight = 430 - headerHeight;
+
+            Scrollviewer.MaxHeight = availableHeight;
+        }
+        private void toggle_filter(object sender, RoutedEventArgs e)
+        {
+            if (FilterContainer.Visibility == Visibility.Collapsed)
             {
-                string prev = journals[0].Date.Year.ToString() + "-" + journals[0].Date.Month.ToString();
-                Journal prev_journal = journals[0];
+                FilterContainer.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                FilterContainer.Visibility = Visibility.Collapsed;
+            }
+        }
+
+        private void filter(object sender, RoutedEventArgs e)
+        {
+            /*
+            List<stock> list = controller.stocks();
+            List<stock> new_arr = new List<stock>();
+
+            int min_amount = int.Parse(filter_min.Text);
+            int max_amount = int.Parse(filter_max.Text);
+            string details = filter_details.Text;
+            string years = FilterYear.SelectedItem is ComboBoxItem yearItem ? yearItem.Content.ToString() : "All Years";
+            string months = FilterMonth.SelectedItem is ComboBoxItem monthItem ? monthItem.Content.ToString() : "All Months";
+            string days = FilterDay.SelectedItem is ComboBoxItem dayItem ? dayItem.Content.ToString() : "All Days";
+
+            foreach (stock stock in list)
+            {
+                if ((stock.Amount <= max_amount && stock.Amount >= min_amount) || (min_amount == 0 && max_amount == 0))
+                {
+                    if (stock.getYear().ToString() == years || years == "All Years")
+                    {
+                        if (stock.getMonth().ToString() == months || months == "All Months")
+                        {
+                            if (stock.getDay().ToString() == days || days == "All Days")
+                            {
+                                if (stock.Details == details || details == "")
+                                {
+                                    new_arr.Add(stock);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            */
+            // Table.Children.Clear();
+            // Table.RowDefinitions.Clear();
+            // show_stock(stockType, new_arr);
+            // update_row_selected(0);
+        }
+
+        private void show_easy(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void show_iq(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void show_robin(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void show_stock(string StockManager, List<Stock> list)
+        {
+            List<Stock> stocks = list;
+            int count = 0;
+            if (stocks.Count > 0)
+            {
+                string prev = stocks[0].Date.Year.ToString() + "-" + stocks[0].Date.Month.ToString();
+                Stock prev_stock = stocks[0];
                 string current = "";
                 float total_month = 0;
-                foreach (Journal journal in journals)
+                foreach (Stock stock in stocks)
                 {
-                    if(journal.JournalType == a)
+                    if (stock.ManagerID == 1)
                     {
-                        current = journal.Date.Year.ToString() + "-" + journal.Date.Month.ToString();
+                        current = stock.Date.Year.ToString() + "-" + stock.Date.Month.ToString();
                         count++;
                         // Console.WriteLine(current + "---" + prev);
 
-                        if(current != prev)
+                        if (current != prev)
                         {
-                            show_total(count, journal, total_month);
+                            show_total(count, stock, total_month);
                             total_month = 0;
                             row_no_touch.Add(count);
-                            row_no_touch.Add(count+1);
+                            row_no_touch.Add(count + 1);
                             count += 2;
                         }
-                    
-                        total_month += journal.Amount;
-                        show_row(count, journal);
+
+                        total_month += stock.CurrentValue;
+                        show_row(count, stock);
 
                         prev = current;
-                        prev_journal = journal;
+                        prev_stock = stock;
                     }
                 }
-                show_total(count+1, prev_journal, total_month);
+                show_total(count + 1, prev_stock, total_month);
                 row_no_touch.Add(count + 1);
             }
-            
         }
-
-        private void show_row(int row, Journal journal)
+        private void show_row(int row, Stock stock)
         {
             Table.RowDefinitions.Add(new RowDefinition());
             Button action = new Button();
@@ -118,13 +186,13 @@ namespace Devoted.View.Pages
 
             Table.Children.Add(action);
 
-            string[] array = { journal.getYear(), journal.getMonth(), journal.getDay(), journal.Details.ToString(), journal.Amount.ToString(), journal.DiverseDetails.ToString() };
+            string[] array = { stock.getDate(), stock.getTime(), stock.Exchange, stock.Symbol, stock.BuyAt.ToString(), stock.CurrentValue.ToString() };
 
             for (int i = 0; i < array.Length; i++)
             {
                 TextBox label = new TextBox();
                 label.Text = array[i];
-                Grid.SetColumn(label, i+1);
+                Grid.SetColumn(label, i + 1);
                 Grid.SetRow(label, row);
                 label.FontSize = 15;
                 label.FontWeight = FontWeights.DemiBold;
@@ -135,7 +203,7 @@ namespace Devoted.View.Pages
             }
         }
 
-        private void show_total(int row, Journal journal, float total_month)
+        private void show_total(int row, Stock stock, float total_month)
         {
             Table.RowDefinitions.Add(new RowDefinition());
             Table.RowDefinitions.Add(new RowDefinition());
@@ -149,7 +217,7 @@ namespace Devoted.View.Pages
             Table.Children.Add(action);
 
             int[] month_day = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-            string[] array = { journal.getYear(), journal.getMonth(), journal.getDay(), "", "0", "" };
+            string[] array = { stock.getDate(), DateTime.Now.Hour.ToString() + ":00", "", "", "0", "", "1" };
 
             for (int i = 0; i < array.Length; i++)
             {
@@ -166,14 +234,14 @@ namespace Devoted.View.Pages
                 Table.Children.Add(label);
             }
 
-            string[] array2 = { journal.getYear(), journal.getMonth(), month_day[int.Parse(journal.getMonth()) - 1].ToString(), "", total_month.ToString(), "" };
+            string[] array2 = { stock.getDate(), DateTime.Now.Hour.ToString() + ":00", month_day[stock.Date.Month - 1].ToString(), "", total_month.ToString(), "", "" };
 
             /*for (int i = 0; i < array.Length; i++)
             {*/
             System.Windows.Controls.Label labela = new System.Windows.Controls.Label();
             labela.Content = array2[4];
             Grid.SetColumn(labela, 4 + 1);
-            Grid.SetRow(labela, row+1);
+            Grid.SetRow(labela, row + 1);
             labela.FontSize = 15;
             labela.FontWeight = FontWeights.DemiBold;
             labela.Padding = new Thickness(10, 5, 10, 5);
@@ -184,15 +252,6 @@ namespace Devoted.View.Pages
             Table.Children.Add(labela);
             // }
 
-        }
-
-
-        private void UpdateScrollViewerHeight()
-        {
-            double headerHeight = (Table_container.RowDefinitions[0].ActualHeight);
-            double availableHeight = 430 - headerHeight;
-
-            Scrollviewer.MaxHeight = availableHeight;
         }
 
         private void update_row_selected(int row)
@@ -229,8 +288,8 @@ namespace Devoted.View.Pages
                         control.Background = Brushes.GreenYellow;
                         continue;
                     }
-                    
-                    
+
+
                 }
             }
         }
@@ -243,90 +302,6 @@ namespace Devoted.View.Pages
                 update_row_selected((int)row);
             }
 
-        }
-
-        private void toggle_filter(object sender, RoutedEventArgs e)
-        {
-            if(FilterContainer.Visibility == Visibility.Collapsed)
-            {
-                FilterContainer.Visibility = Visibility.Visible;
-            }
-            else
-            {
-                FilterContainer.Visibility = Visibility.Collapsed;
-            }
-        }
-
-        private void CRJ_Show(object sender, RoutedEventArgs e)
-        {
-            CRJ_Button.BorderThickness = new Thickness(0, 0, 0, 1);
-            CPJ_Button.BorderThickness = new Thickness(0, 0, 0, 0);
-            GL_Button.BorderThickness = new Thickness(0, 0, 0, 0);
-            Table.Children.Clear();
-            Table.RowDefinitions.Clear();
-            show_journal("CRJ", controller.journals());
-            JournalType = "CRJ";
-            update_row_selected(0);
-        }
-
-        private void CPJ_Show(object sender, RoutedEventArgs e)
-        {
-            CRJ_Button.BorderThickness = new Thickness(0, 0, 0, 0);
-            CPJ_Button.BorderThickness = new Thickness(0, 0, 0, 1);
-            GL_Button.BorderThickness = new Thickness(0, 0, 0, 0);
-            Table.Children.Clear();
-            Table.RowDefinitions.Clear();
-            show_journal("CPJ", controller.journals());
-            JournalType = "CPJ";
-            update_row_selected(0);
-        }
-
-        private void GL_Show(object sender, RoutedEventArgs e)
-        {
-            CRJ_Button.BorderThickness = new Thickness(0, 0, 0, 0);
-            CPJ_Button.BorderThickness = new Thickness(0, 0, 0, 0);
-            GL_Button.BorderThickness = new Thickness(0, 0, 0, 1);
-            Table.Children.Clear();
-            Table.RowDefinitions.Clear();
-            JournalType = "GL";
-            // show_journal("GL");
-        }
-
-        private void filter(object sender, RoutedEventArgs e)
-        {
-            List<Journal> list = controller.journals();
-            List<Journal> new_arr = new List<Journal>();
-
-            int min_amount = int.Parse(filter_min.Text);
-            int max_amount = int.Parse(filter_max.Text);
-            string details = filter_details.Text;
-            string years = FilterYear.SelectedItem is ComboBoxItem yearItem ? yearItem.Content.ToString() : "All Years";
-            string months = FilterMonth.SelectedItem is ComboBoxItem monthItem ? monthItem.Content.ToString() : "All Months";
-            string days = FilterDay.SelectedItem is ComboBoxItem dayItem ? dayItem.Content.ToString() : "All Days";
-
-            foreach (Journal journal in list)
-            {
-                if ((journal.Amount <= max_amount && journal.Amount >= min_amount) || (min_amount == 0 && max_amount == 0))
-                {
-                    if (journal.getYear().ToString() == years || years == "All Years")
-                    {
-                        if (journal.getMonth().ToString() == months || months == "All Months")
-                        {
-                            if (journal.getDay().ToString() == days || days == "All Days")
-                            {
-                                if (journal.Details == details || details == "")
-                                {
-                                    new_arr.Add(journal);
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            Table.Children.Clear();
-            Table.RowDefinitions.Clear();
-            show_journal(JournalType, new_arr);
-            update_row_selected(0);
         }
     }
 }

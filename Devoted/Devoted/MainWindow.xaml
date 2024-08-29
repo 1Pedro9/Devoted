@@ -119,7 +119,7 @@
                 Grid.Row="2"
                 Grid.Column="1"
                 >
-                <ContentControl Content="{Binding journal}"/>
+                <ContentControl Content="{Binding stock}"/>
             </StackPanel>
         </Grid>
     </Border>

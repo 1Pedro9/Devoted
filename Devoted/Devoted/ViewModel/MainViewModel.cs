@@ -17,10 +17,20 @@ namespace Devoted.ViewModel
             set { _journal = value; }
         }
 
+        private object _stock;
+        public object stock
+        {
+            get { return _stock; }
+            set { _stock = value; }
+        }
+
         public MainViewModel()
         {
             JournalVM journalVM = new JournalVM();
             journal = journalVM;
+
+            StockVM stockVm = new StockVM();
+            stock = stockVm;
         }
     }
 }

@@ -84,5 +84,41 @@ namespace Devoted.Controller
         }
 
 
+        public List<Stock> stocks()
+        {
+            List<Stock> stocks = new List<Stock>();
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../../Devoted/Database/Stocks.csv");
+
+            try
+            {
+                // Read all lines from the CSV file
+                var lines = File.ReadAllLines(filePath);
+
+                // Skip the header line and parse the data
+                foreach (var line in lines.Skip(1))
+                {
+                    var values = line.Split(',');
+
+                    int stockId = int.Parse(values[0]);
+                    DateTime date = DateTime.ParseExact(values[1], "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
+                    string exchange = values[2];
+                    string symbol = values[3];
+                    float BuyAt = int.Parse(values[4]);
+                    float CurrentValue = int.Parse(values[5]);
+                    int memberId = int.Parse(values[6]);
+                    int managerID = int.Parse(values[7]);
+                    int listID = int.Parse(values[8]);
+
+                    // Create a new Journal object and add it to the list
+                    stocks.Add(new Stock(stockId, date, exchange, symbol, BuyAt, CurrentValue, memberId, managerID, listID));
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred while reading the CSV file: {ex.Message}");
+            }
+
+            return stocks;
+        }
     }
 }
